@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de San Valentín</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://www.pexels.com/photo/close-up-photo-of-pink-roses-4063744/'); /* Cambia esta URL por tu fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            max-width: 90%;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #ff5a5f;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .flowers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .flower {
+            position: absolute;
+            font-size: 5em;
+            animation: floatFlowers 8s infinite;
+            color: #ff5a5f;
+            opacity: 0.9;
+        }
+
+        .flower:nth-child(odd) {
+            animation-delay: 2s;
+        }
+
+        @keyframes floatFlowers {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-150px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Te quiero mucho Fany!</h1>
+        <p>Feliz Día de San Valentín</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lQHj7u-SwB0?si=bRLtomwlADqu19eB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="flowers">
+        <div class="flower" style="top: 10%; left: 15%;">🌹</div>
+        <div class="flower" style="top: 20%; left: 35%;">🌹</div>
+        <div class="flower" style="top: 25%; left: 55%;">🌹</div>
+        <div class="flower" style="top: 40%; left: 10%;">🌹</div>
+        <div class="flower" style="top: 50%; left: 70%;">🌹</div>
+        <div class="flower" style="top: 60%; left: 85%;">🌹</div>
+        <div class="flower" style="top: 70%; left: 20%;">🌹</div>
+        <div class="flower" style="top: 80%; left: 60%;">🌹</div>
+        <div class="flower" style="top: 30%; left: 75%;">🌹</div>
+        <div class="flower" style="top: 10%; left: 90%;">🌹</div>
+    </div>
+</body>
+</html>
